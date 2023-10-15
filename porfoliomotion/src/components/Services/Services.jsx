@@ -22,7 +22,7 @@ const variants = {
 export const Services = () => {
   const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "100px" });
+  const isInView = useInView(ref, { margin: "-100px" });
 
   return (
     <motion.div
@@ -30,7 +30,7 @@ export const Services = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      animate={isInView && "animate"}
+      animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
